@@ -7,7 +7,7 @@ import lippia.web.services.GoogleSearchResultService;
 
 public class GoogleSearchSteps extends PageSteps {
 
-    @Given("^The client is on google page$")
+    @Given("The client is on google page")
     public void home() {
         GoogleHomeService.navegarWeb();
     }
@@ -23,6 +23,8 @@ public class GoogleSearchSteps extends PageSteps {
         GoogleHomeService.enterSearchCriteria(criteria);
         GoogleHomeService.clickSearchButton();
     }
+
+
 
     @Then("The client verify that results are shown properly")
     public void statVerification() {
